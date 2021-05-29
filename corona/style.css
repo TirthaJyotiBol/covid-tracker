@@ -17,6 +17,7 @@ span{
 }
 span p{
     text-align: justify;
+    font-size: 0.41cm;
     font-family: 'Playfair Display', serif;
 }
 span img{
@@ -27,18 +28,26 @@ span img{
     margin-right: 1cm;
     margin-left: 0.2cm;
 }
+#red{
+    color: red;
+}
 section span{
     display: flex;
     flex-direction: row-reverse;
     margin-right: 4cm;
 }
-h1{
-    margin-left: 1cm;
+#head{
+    margin-left: 4cm;
     color: rgb(38, 93, 241);
     font-family: 'Merriweather', serif;
+    margin-bottom: 8px;
 }
 label{
     margin-left: 10cm;
+}
+#name{
+    width: 9.2cm;
+    margin-bottom: 5px;
 }
 #bton{
     margin-top: 0.4cm;
@@ -53,4 +62,14 @@ label{
     background-color: rgba(255, 0, 0, 0.808);
     cursor: pointer;
 
+}
+.footer{
+    background-color: gray;
+    margin-top: 1cm;
+    color: white;
+    height: 1cm;
+}
+.footer p{
+    padding-left: 16cm;
+    padding-top: 0.2cm;
 }
