@@ -74,17 +74,21 @@ India began its vaccination programme on 16 January 2021, and by April was admin
   <img src="https://cdn.pixabay.com/photo/2020/04/26/10/35/home-5094603__340.jpg" alt="covid">
   </span>
 
-  <h1>YOU CAN FIND THE CHART ABOUT THE NUMBER OF LIVE CASES IN INDIA</h1>
+  <h1 id="head">YOU CAN FIND THE CHART ABOUT THE NUMBER OF <label id="red">LIVE </label> CASES   IN INDIA</h1>
 
   <form method="post">
+    <label>What is your name </label>
+    <input type="text" name="name" id="name"> <br>
    <label > For how many days you want to see details </label> 
-    <input type="text" name="totaldays"> <br>
+    <input type="text" name="totaldays" required> <br>
     <button id="bton" type="submit" name="submit">FIND</button>
   </form>
 
   <?php  
   if(isset($_POST['submit'])){
+    $name =$_POST['name'];
     ?>
+    <p> Hi,  <?php echo $name?> your data is shown below ! STAY SAFE </p>
   <table class="table">
     <thead>
       <tr>
@@ -134,5 +138,10 @@ India began its vaccination programme on 16 January 2021, and by April was admin
   </table>
   <br> <br> <br>
 </body>
+
+
+<div class="footer">
+  <p> copyright_@Tirtha Jyoti Bol </p>
+</div>
 
 </html>
